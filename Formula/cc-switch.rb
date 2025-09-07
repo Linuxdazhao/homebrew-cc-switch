@@ -1,7 +1,7 @@
 class CcSwitch < Formula
   desc "A CLI tool for managing multiple Claude API configurations and automatically switching between them"
   homepage "https://github.com/Linuxdazhao/cc_auto_switch"
-  version "0.0.19"
+  version "0.0.20"
   license "MIT"
 
   if OS.mac?
