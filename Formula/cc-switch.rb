@@ -7,7 +7,7 @@ class CcSwitch < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-aarch64-apple-darwin.tar.gz"
-      sha256 "392399bfd9c79b82717d57c92c9446f1b72f2deb3d4b087302a5e80313e86bdf"
+      sha256 "a973f013cacd21dd2c9d191a5bc1b9fb4ef369d9ac6286ffe32682fc6ae0bfdf"
     else
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-x86_64-apple-darwin.tar.gz"
       sha256 "e48d21663f4397dcba6a17aa25b69876dd59d8d7b4270cfe6cf9641d48142fa1"
