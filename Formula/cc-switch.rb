@@ -7,18 +7,18 @@ class CcSwitch < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-aarch64-apple-darwin.tar.gz"
-      sha256 "8c911c113deab08d56880e4cf8245b098afc5da4c42b5d7d24be2cc7f13700c0"
+      sha256 "392399bfd9c79b82717d57c92c9446f1b72f2deb3d4b087302a5e80313e86bdf"
     else
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-x86_64-apple-darwin.tar.gz"
-      sha256 "b15149be61dd96f63ec8cca99a29a3de3d18201227fec8af4886840ff38979fe"
+      sha256 "e48d21663f4397dcba6a17aa25b69876dd59d8d7b4270cfe6cf9641d48142fa1"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "dfcf456860dd2473e8dc69c96cd4c271b203b336377bd57c039bbe4e8e1dd1c3"
+      sha256 "a5f707e069385035b93d5678759081fd5d58079a44e04d899c57b292e63b88d0"
     else
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2226b591b17d7f12b434a770724073eff4605176c41b659be892acfd7685ba53"
+      sha256 "fa537cb3e894e081a5cba9248d864fb0d014bf2b8b6c82f0889158206bbca0d4"
     end
   end
 
