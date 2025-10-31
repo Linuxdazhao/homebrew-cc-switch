@@ -42,7 +42,7 @@ class CcSwitch < Formula
          cc-switch use my-config
 
       3. Interactive mode:
-         cc-switch current
+         cc-switch
 
       4. Shell completion:
          # For fish
