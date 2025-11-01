@@ -34,26 +34,26 @@ class CcSwitch < Formula
   def caveats
     <<~EOS
       To use cc-switch effectively:
-      
+
       1. Add configurations:
          cc-switch add my-config TOKEN_HERE https://api.anthropic.com
-      
+
       2. Switch between configurations:
          cc-switch use my-config
-      
+
       3. Interactive mode:
          cc-switch current
-      
+
       4. Shell completion:
          # For fish
          cc-switch completion fish > ~/.config/fish/completions/cc-switch.fish
-         
+
          # For zsh
          cc-switch completion zsh > ~/.zsh/completions/_cc-switch
-         
+
          # For bash
          cc-switch completion bash > ~/.bash_completion.d/cc-switch
-      
+
       For more information, visit: https://github.com/Linuxdazhao/cc_auto_switch
     EOS
   end
