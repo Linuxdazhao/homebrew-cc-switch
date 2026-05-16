@@ -1,24 +1,24 @@
 class CcSwitch < Formula
   desc "A CLI tool for managing multiple Claude API configurations and automatically switching between them"
   homepage "https://github.com/Linuxdazhao/cc_auto_switch"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.9/cc-switch-aarch64-apple-darwin.tar.gz"
-      sha256 "9560e2ea7002d86e1e21db83e0f71ef85107f14ea669988e84dc6b1d35e2c06a"
+      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.10/cc-switch-aarch64-apple-darwin.tar.gz"
+      sha256 "1b15ff9f87765fe6111d928a0ec3ba3e3341e71d26f94cf5d697b51e1edab6ba"
     else
-      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.9/cc-switch-x86_64-apple-darwin.tar.gz"
-      sha256 "411afbc05730dee8c394a271a7ffee72fd60b2f9ca7c476409af047975eb5718"
+      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.10/cc-switch-x86_64-apple-darwin.tar.gz"
+      sha256 "93e0405df7862f23e6b3842ef77427b88ebf4c38aa1b8b2214fa24c95a67b427"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.9/cc-switch-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "01cf06f82bd293046b882cd603c34b554fd0d06d1fcd5284f79d7ce247c18381"
+      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.10/cc-switch-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "84607c00159704d7d1f1ba4fdc9e0905584d1bde55d30413293424fbea2589c2"
     else
-      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.9/cc-switch-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ff02a82be8badef215b3b68f9e496b12dc0b9beda972a9a38710ebfde0433f9b"
+      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.10/cc-switch-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c29e23284b80dbe8d62a6a171d0c3c29ee6f25a669e777bbe7e087727e559f60"
     end
   end
 
@@ -28,7 +28,7 @@ class CcSwitch < Formula
 
   test do
     assert_match "cc-switch", shell_output("#{bin}/cc-switch --help")
-    assert_match version.to_s, shell_output("#{bin}/cc-switch version")
+    assert_match version.to_s, shell_output("#{bin}/cc-switch --version")
   end
 
   def caveats
@@ -42,19 +42,11 @@ class CcSwitch < Formula
          cc-switch use my-config
 
       3. Interactive mode:
-         cc-switch current
+         cc-switch
 
       4. Shell completion:
          # For fish
          cc-switch completion fish > ~/.config/fish/completions/cc-switch.fish
-
-         # For zsh
-         cc-switch completion zsh > ~/.zsh/completions/_cc-switch
-
-         # For bash
-         cc-switch completion bash > ~/.bash_completion.d/cc-switch
-
-      For more information, visit: https://github.com/Linuxdazhao/cc_auto_switch
     EOS
   end
 end
