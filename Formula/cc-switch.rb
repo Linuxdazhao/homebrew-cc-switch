@@ -1,24 +1,24 @@
 class CcSwitch < Formula
   desc "A CLI tool for managing multiple Claude API configurations and automatically switching between them"
   homepage "https://github.com/Linuxdazhao/cc_auto_switch"
-  version "0.1.10"
+  version "0.1.12"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.10/cc-switch-aarch64-apple-darwin.tar.gz"
-      sha256 "1b15ff9f87765fe6111d928a0ec3ba3e3341e71d26f94cf5d697b51e1edab6ba"
+      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.12/cc-switch-aarch64-apple-darwin.tar.gz"
+      sha256 "ba36fcb29e2b76d34acadf693b7e0c340f11a0d591cc38e79872d7e71ac809fd"
     else
-      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.10/cc-switch-x86_64-apple-darwin.tar.gz"
-      sha256 "93e0405df7862f23e6b3842ef77427b88ebf4c38aa1b8b2214fa24c95a67b427"
+      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.12/cc-switch-x86_64-apple-darwin.tar.gz"
+      sha256 "cd9f3d8135f06e8b062c8b9ae6c7089ecb7705b94ae828045bfebf1f51e27e45"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.10/cc-switch-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "84607c00159704d7d1f1ba4fdc9e0905584d1bde55d30413293424fbea2589c2"
+      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.12/cc-switch-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7619333dd5268cadae167f9c2a33ff8e80397b75820ea01aeb93f82a4ffab1fc"
     else
-      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.10/cc-switch-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c29e23284b80dbe8d62a6a171d0c3c29ee6f25a669e777bbe7e087727e559f60"
+      url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v0.1.12/cc-switch-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "da13407a51b2e3a5264a71c63d7779f40b233182e0796a84b1fc57817f63045d"
     end
   end
 
