@@ -1,24 +1,24 @@
 class CcSwitch < Formula
   desc "A CLI tool for managing multiple Claude API configurations and automatically switching between them"
   homepage "https://github.com/Linuxdazhao/cc_auto_switch"
-  version "0.1.41"
+  version "0.1.42"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-aarch64-apple-darwin.tar.gz"
-      sha256 "8117ff8baa8587abd395f5647449420f4edc50cdeb4c091b195975d731fb963e"
+      sha256 "3f22466ff0b42879159fac0a84d56c02e396a2eeb13e33f27e9393315671088d"
     else
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-x86_64-apple-darwin.tar.gz"
-      sha256 "e84837e03ecc355ed84a757bb17d137a03981b0a87a319d5b98a7eaadb64bb2d"
+      sha256 "4e378cb4780f4a2b184b55608f1847fe351ca80892d0b3ac7b65ac0f7a966b0e"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "01c0d6af498c098f64cd9930883b8744088a717902ecb13a136456ccb011290d"
+      sha256 "6c78bc57475364d4d63a13e1afc62e00cd49028538729ace33b4273d4567085a"
     else
       url "https://github.com/Linuxdazhao/cc_auto_switch/releases/download/v#{version}/cc-switch-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f01374714ba268b799e19a84ec1f262c097f6baf45dfe33daa3d978f865bbd67"
+      sha256 "9afd4bda6340769bbc9cd72ba377c4c66e1b9bbeb305f4215f08a3e591854a65"
     end
   end
 
